@@ -161,6 +161,10 @@ SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sdm845/media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-hotword.xml
 
+# KangOS specific properties
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.kangos.cpu=SDM845
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/gf_input.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/gf_input.idc \
